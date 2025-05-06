@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagarkot Serenity Resort - Your Himalayan Escape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800 font-['Playfair_Display']">Nagarkot Serenity Resort</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-green-600 transition">Home</a></li>
+                <li><a href="#features" class="text-gray-600 hover:text-green-600 transition">Features</a></li>
+                <li><a href="#gallery" class="text-gray-600 hover:text-green-600 transition">Gallery</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-green-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white">
+        <div class="fade-in">
+            <h2 class="text-5xl md:text-6xl font-['Playfair_Display'] font-bold mb-4">Welcome to Nagarkot Serenity Resort</h2>
+            <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Experience tranquility amidst the Himalayas with breathtaking views and unparalleled hospitality.</p>
+            <a href="#contact" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-['Playfair_Display'] font-bold text-center text-gray-800 mb-12">Why Choose Us?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1519974719763-e49b7f8e7db8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Luxury Rooms" class="mx-auto mb-4 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Luxury Rooms</h4>
+                    <p class="text-gray-600">Spacious rooms with modern amenities and stunning mountain views.</p>
+                </div>
+                <div class="text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1514458245846-4d9acfc84e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Gourmet Dining" class="mx-auto mb-4 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Gourmet Dining</h4>
+                    <p class="text-gray-600">Savor authentic Nepali and international cuisine made with fresh ingredients.</p>
+                </div>
+                <div class="text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Adventure Activities" class="mx-auto mb-4 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Adventure Activities</h4>
+                    <p class="text-gray-600">Explore Nagarkot with guided hikes, yoga sessions, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-['Playfair_Display'] font-bold text-center text-gray-800 mb-12">Explore Our Resort</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Resort View" class="w-full h-64 object-cover rounded-lg fade-in">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Room Interior" class="w-full h-64 object-cover rounded-lg fade-in">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dining Area" class="w-full h-64 object-cover rounded-lg fade-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-['Playfair_Display'] font-bold text-center text-gray-800 mb-12">Get in Touch</h3>
+            <div class="max-w-lg mx-auto fade-in">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" rows="5"></textarea>
+                </div>
+                <button class="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Nagarkot Serenity Resort. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in Animation on Scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(element => observer.observe(element));
+    </script>
+</body>
+</html>
